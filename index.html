@@ -7,81 +7,119 @@
 <meta name="description" content="We re-engineer ambitious brands by integrating elite automation, advanced AI architecture, and ruthless client acquisition systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
 <canvas id="bg-canvas"></canvas>
 
 <header class="nav">
 <div class="nav-inner">
 <span class="logo">INFINITE<span class="accent-gradient">X</span></span>
-<a href="#briefing" class="nav-cta">Apply for a Briefing</a>
+<a href="#briefing" class="nav-cta magnetic"><span>Apply for a Briefing</span></a>
 </div>
 </header>
 
 <section class="hero" id="hero">
+<div class="grid-lines" aria-hidden="true">
+<span></span><span></span><span></span><span></span><span></span>
+</div>
 <div class="hero-orb orb-1"></div>
 <div class="hero-orb orb-2"></div>
+<div class="hero-shape shape-ring" aria-hidden="true"></div>
+<div class="hero-shape shape-square" aria-hidden="true"></div>
+<div class="hero-shape shape-tri" aria-hidden="true"></div>
 <div class="hero-content">
-<span class="eyebrow" data-reveal>AI-Powered Growth Systems</span>
-<h1 data-reveal>Linear Growth is a Trap.<br><span class="accent-gradient">Build the Infinite Engine.</span></h1>
+<span class="eyebrow pill" data-reveal>&#9679;&nbsp; AI-Powered Growth Systems</span>
+<h1 class="hero-title split-up" data-reveal>
+<span class="split-line">
+<span class="split-word" style="--i:0"><span>Linear</span></span>
+<span class="split-word" style="--i:1"><span>Growth</span></span>
+<span class="split-word" style="--i:2"><span>is</span></span>
+<span class="split-word" style="--i:3"><span>a</span></span>
+<span class="split-word" style="--i:4"><span>Trap.</span></span>
+</span>
+<span class="split-line accent-gradient">
+<span class="split-word" style="--i:5"><span>Build</span></span>
+<span class="split-word" style="--i:6"><span>the</span></span>
+<span class="split-word" style="--i:7"><span>Infinite</span></span>
+<span class="split-word" style="--i:8"><span>Engine.</span></span>
+</span>
+</h1>
 <p class="sub" data-reveal>We re-engineer ambitious brands by integrating elite automation, advanced AI architecture, and ruthless client acquisition systems. Cut the friction. 10X your output.</p>
-<a href="#briefing" class="btn-primary" data-reveal>Apply for a Strategy Briefing</a>
+<a href="#briefing" class="btn-primary magnetic" data-reveal><span>Apply for a Strategy Briefing</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
 </div>
 <div class="scroll-cue"><span></span></div>
 </section>
 
-<section class="pattern-interrupt">
-<div class="container">
+<section class="pattern-interrupt" id="reality">
+<div class="container reality-grid">
+<div class="reality-left">
 <span class="eyebrow" data-reveal>// THE REALITY CHECK</span>
 <p class="quote" data-reveal><span class="quote-mark">&quot;</span>The hidden tax on your business isn't inflation. It's legacy friction.</p>
+</div>
+<div class="reality-right">
 <p data-reveal>Most companies scale by adding headcount, overhead, and complexity. They fight tomorrow's market wars with yesterday's manual workflows.</p>
 <p data-reveal>At a certain point, more effort yields diminishing returns. If your brand positioning doesn't command authority, or if your talent is stuck managing repetitive tasks instead of driving vision, you aren't scaling, you're just surviving.</p>
 <p class="emphasis" data-reveal>Infinite X exists to break that loop.</p>
+</div>
 </div>
 </section>
 
 <section class="pillars" id="architecture">
 <div class="container">
 <span class="eyebrow" data-reveal>// SYSTEM STATUS: INTEGRATED</span>
-<h2 data-reveal>The Infinite Architecture</h2>
-<div class="pillar-grid">
-<div class="pillar tilt-card" data-reveal>
+<h2 class="split-up" data-reveal>
+<span class="split-line">
+<span class="split-word" style="--i:0"><span>The</span></span>
+<span class="split-word" style="--i:1"><span>Infinite</span></span>
+<span class="split-word" style="--i:2"><span>Architecture</span></span>
+</span>
+</h2>
+<div class="bento-grid">
+<div class="bento-card card-architecture tilt-card" data-reveal>
+<span class="ghost-num">01</span>
 <span class="pillar-num">01</span>
 <h3>Architecture</h3>
 <h4>Native Custom Web &amp; App Engineering</h4>
 <p>We hand-code every platform from the ground up, no drag-and-drop templates, no bloated builders. You get scalable, native web and app infrastructure engineered to outperform anything off-the-shelf.</p>
 </div>
-<div class="pillar tilt-card" data-reveal>
+<div class="bento-card card-automation tilt-card" data-reveal>
+<span class="ghost-num">02</span>
 <span class="pillar-num">02</span>
 <h3>Automation</h3>
 <h4>Custom Enterprise AI &amp; Programmatic Workflows</h4>
 <p>Human intellect belongs on strategy, not repetitive tasks. We build bespoke enterprise AI systems and programmatic workflows that absorb your operational overhead without adding headcount.</p>
 </div>
-<div class="pillar tilt-card" data-reveal>
+<div class="bento-card card-acquisition tilt-card" data-reveal>
+<span class="ghost-num">03</span>
 <span class="pillar-num">03</span>
 <h3>Acquisition</h3>
 <h4>High-Intent Sales Pipelines &amp; Autonomous Funnels</h4>
 <p>Stop chasing leads. We deploy algorithmic, high-intent sales pipelines and autonomous funnels that capture, qualify, and book high-ticket opportunities on autopilot.</p>
 </div>
-<div class="pillar tilt-card" data-reveal>
+<div class="bento-card card-positioning tilt-card" data-reveal>
+<span class="ghost-num">04</span>
 <span class="pillar-num">04</span>
 <h3>Positioning</h3>
 <h4>Modern Corporate Identity &amp; Executive Authority Branding</h4>
-<p>We don't just update logos, we build digital empires. Your identity is engineered with sharp, modern executive authority that commands premium pricing and eliminates market noise.</p>
+<p>We don't just update logos, we build digital empires with sharp, modern executive authority.</p>
 </div>
-<div class="pillar tilt-card" data-reveal>
+<div class="bento-card card-media tilt-card" data-reveal>
+<span class="ghost-num">05</span>
 <span class="pillar-num">05</span>
 <h3>Media</h3>
 <h4>High-Production Documentaries &amp; Short-Form Narrative Engines</h4>
-<p>We produce high-production brand documentaries and short-form narrative engines that turn your story into a growth asset, built for authority and reach across every platform.</p>
+<p>We turn your story into a growth asset, built for authority and reach across every platform.</p>
 </div>
-<div class="pillar tilt-card" data-reveal>
+<div class="bento-card card-protection tilt-card" data-reveal>
+<span class="ghost-num">06</span>
 <span class="pillar-num">06</span>
 <h3>Protection</h3>
 <h4>Structural Corporate Legal Architecture &amp; Asset Security</h4>
-<p>Growth without protection is exposure. We build the structural corporate legal architecture and asset security systems that safeguard what you've built as you scale.</p>
+<p>We safeguard what you've built with structural legal architecture and asset security.</p>
 </div>
 </div>
 </div>
@@ -89,9 +127,10 @@
 
 <section class="mechanism" id="mechanism">
 <div class="container">
-<span class="eyebrow" data-reveal>// 02 THE PROCESS</span>
+<span class="eyebrow" data-reveal>// THE PROCESS</span>
 <h2 data-reveal>How We Build Your Infinite Engine</h2>
 <div class="phase-row">
+<div class="phase-track" aria-hidden="true"><div class="phase-track-fill" id="phase-track-fill"></div></div>
 <div class="phase" data-reveal>
 <span class="phase-label">PHASE 01</span>
 <h3>Diagnose &amp; Architect</h3>
@@ -116,17 +155,35 @@
 <span class="eyebrow" data-reveal>// APPLY NOW</span>
 <h2 data-reveal>Ready to Build the Infinite Engine?</h2>
 <p data-reveal>We only take on a limited number of brands each quarter. Apply below and our strategy team will tell you, honestly, whether we're a fit.</p>
-<div class="briefing-box" data-reveal>
+<div class="briefing-box glass" data-reveal>
 <h3>Apply for a Strategy Briefing</h3>
 <p>Tell us about your business. No pitch decks, no fluff, just a straight conversation about your growth ceiling.</p>
 <form id="lead-form">
-<input type="text" name="full_name" placeholder="Full Name" required>
-<input type="email" name="email" placeholder="Work Email" required>
-<input type="text" name="company" placeholder="Company Name" required>
-<input type="text" name="website" placeholder="Website URL">
-<input type="text" name="monthly_revenue" placeholder="Approx. Monthly Revenue">
-<textarea name="bottleneck" rows="3" placeholder="What's the biggest bottleneck holding your growth back?"></textarea>
-<button type="submit" id="submit-btn" class="btn-primary">Secure Your Strategic Briefing</button>
+<div class="field">
+<input type="text" id="full_name" name="full_name" placeholder=" " required>
+<label for="full_name">Full Name</label>
+</div>
+<div class="field">
+<input type="email" id="email" name="email" placeholder=" " required>
+<label for="email">Work Email</label>
+</div>
+<div class="field">
+<input type="text" id="company" name="company" placeholder=" " required>
+<label for="company">Company Name</label>
+</div>
+<div class="field">
+<input type="text" id="website" name="website" placeholder=" ">
+<label for="website">Website URL</label>
+</div>
+<div class="field">
+<input type="text" id="monthly_revenue" name="monthly_revenue" placeholder=" ">
+<label for="monthly_revenue">Approx. Monthly Revenue</label>
+</div>
+<div class="field">
+<textarea name="bottleneck" id="bottleneck" rows="3" placeholder=" "></textarea>
+<label for="bottleneck">What's the biggest bottleneck holding your growth back?</label>
+</div>
+<button type="submit" id="submit-btn" class="btn-primary magnetic"><span>Secure Your Strategic Briefing</span></button>
 </form>
 <div id="form-status"></div>
 </div>
@@ -134,6 +191,7 @@
 </section>
 
 <footer class="footer">
+<span class="logo">INFINITE<span class="accent-gradient">X</span></span>
 <p>&copy; 2026 Infinite X. All rights reserved.</p>
 </footer>
 
