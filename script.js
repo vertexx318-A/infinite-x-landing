@@ -68,6 +68,24 @@ document.querySelectorAll(".tilt-card").forEach(card => {
 // ---------- Environment checks ----------
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const finePointer = window.matchMedia("(pointer: fine)").matches;
+
+// ---------- Mobile Nav Toggle ----------
+const navToggle = document.getElementById("nav-toggle");
+const navLinksEl = document.getElementById("nav-links");
+if (navToggle && navLinksEl) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinksEl.classList.toggle("open");
+    navToggle.classList.toggle("open", isOpen);
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+  navLinksEl.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      navLinksEl.classList.remove("open");
+      navToggle.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 // ---------- Custom Cursor ----------
 const cursorDot = document.getElementById("cursor-dot");
 const cursorRing = document.getElementById("cursor-ring");
